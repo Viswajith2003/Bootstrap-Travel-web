@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Foods</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-primary px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">AURORATOURS</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- modal  -->
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book a Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row g-2">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input id="email1" type="email" class="form-control" placeholder="Email Address">
+                                    <label for="email1">
+                                        Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select id="select1" class="form-select">
+                                        <option>Tromso, Norway $899</option>
+                                        <option>Reykjavik, Iceland $799</option>
+                                        <option>Yukon, Canada $849</option>
+                                    </select>
+                                    <label for="select1"> Pick a tour</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Check-out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousal  -->
+    <section id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/travel2.jpg" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption  top-1 " style="margin-bottom: 200px;">
+                    <p class="text-warning fw-bolder fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+                    <h1 class="text-dark display-1 fw-bolder text-capitalize ">The Aurora Tour</h1>
+                    <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book Now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/travel1.jpg" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption  top-1 " style="margin-bottom: 200px;">
+                    <p class="text-dark fw-bolder fs-3 mt-5 text-uppercase">Experience the thrill of the northern lights
+                    </p>
+                    <h1 class="text-info display-1 fw-bolder text-capitalize ">Aurora Expedition</h1>
+                    <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/travel3.webp" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption  top-1 " style="margin-bottom: 200px;">
+                    <p class="text-white fw-bolder fs-3 mt-5 text-uppercase">Get ready for the adventure of a lifetime
+                    </p>
+                    <h1 class="text-info display-1 fw-bolder text-capitalize ">Northern Lights Adventure</h1>
+                    <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book now</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+</body>
+
+</html>
